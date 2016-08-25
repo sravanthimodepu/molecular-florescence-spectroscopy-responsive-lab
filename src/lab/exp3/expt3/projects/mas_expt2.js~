@@ -1,0 +1,123 @@
+var images = [];
+var img;
+images[0] = "images/spec_on_redLight.png";
+images[1] = "images/spec_on_no_redLight.png";
+var solvents = ["Cyclohexane","Dioxane","Acetonitrile","Ethanol","Ethylene Glycol"];
+var cases = [0,1,2,3,4];
+var x=0;
+var step_no=0;
+var slider,myCanvas;
+/* function setup(){
+  myCanvas = createCanvas(windowWidth,windowHeight);
+  myCanvas.position(0,0);
+  slider = createSlider(0,4,0);
+  slider.position(200,50);
+  slider.size(347);
+  var index=0;
+  for(var i=0;i<=347;i=i+(347/4)){
+    line(200+i,45,200+i,53);
+    text(solvents[index],170+i,40);
+    index++;
+  }
+  initial_function();
+} */
+function initial_function(){
+  var index=0;
+        document.getElementById("data_button").addEventListener("click", function() {
+            popitup("slideshow.html");
+        }, false);
+
+        document.getElementById("demo").innerHTML = "Step-No 1:Prepare five 1 x 10<sup>-5</sup> M coumarin-138 solutions in solvents: cyclohexane, dioxane, acetonitrile, ethyl alcohol and ethylene glycol. Such dilute solutions can be prepared via dilution from 1 x 10<sup>-4</sup> M stock solutions in respective solvents. Here solutions in different solvents are shown on a solvent selection bar.";
+
+        var modal = document.getElementById('manual');
+
+        // Get the button that opens the manual modal
+        var btn = document.getElementById("manual_button");
+
+        // Get the <span> element that closes the manual modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the manual modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+ }
+    function popitup(url) {
+        // Opens a new browser window called newwindow. url specifies the URL of the page to open.
+        newwindow=window.open(url,'name','height=300,width=250',"_parent");
+        // Sets focus to the new window if the focus is on the previous page.
+        if (window.focus) {
+            newwindow.focus();
+        }
+        return false;
+    }
+
+    // When the user clicks on reset experiment this method is called
+    function reload(){
+        // Reloads the current document.
+        location.reload();
+    }
+
+
+    function turnOn() {
+        // Get the image
+        img = document.getElementById('table_with_spec');
+        // Change the source of the image 
+        img.src = images[x];
+        //increment x;
+        x++;
+        if(x >= images.length){
+            x = 0;
+        }
+        // Call turnOn() method every 250ms 
+        setTimeout("turnOn()", 250);
+    }
+function showClock(){
+        if(step_no==0){
+            // Get the images.
+            var context=document.getElementById('clockScreen');
+            var hand =document.getElementById('clockHand');
+            // Make the visiblility of the obtained images visible
+            context.style.visibility='visible';
+            hand.style.visibility="visible";
+            // Rotate 'clockHand' using jQueryRotate.js
+            var angle = 0;
+            setInterval(function(){
+                angle+=3;
+                $('#clockHand').rotate(angle);
+            },170);
+            step_no++;
+            //After 10 secs dispose clock
+            setTimeout("disposeClock()",10000);
+        }
+    }
+
+    // After 30 seconds of display of the timer the visibility of clock is changed back to hidden.
+    function disposeClock(){
+        // Make the visiblility of the obtained images hidden.
+        document.getElementById('clockScreen').style.visibility='hidden';
+        document.getElementById('clockHand').style.visibility='hidden';
+        // Change to next intsruction to be followed.
+    }
+
+function changeFlask(){
+  var img;
+  img = document.getElementById("round-bottom-flask") ;
+  img.src = "image-specific/filled-round-bottom-flask.png";
+   document.getElementById("demo").innerHTML = "Step-No 2: To take a particular solution, click on the appropriate solvent on the solvent selection bar and then click on the volumetric flask containing the solution.";
+  
+}
+
+
