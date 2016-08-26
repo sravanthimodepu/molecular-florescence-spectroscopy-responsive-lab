@@ -1,11 +1,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>mfs_4</title>
+    <title>mfs_2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="mfs_expt4.css">
+    <link rel="stylesheet" type="text/css" href="mfs_expt2.css">
     <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
     <script language="javascript" src="libraries/p5.dom.js"></script>
     <script language="javascript" src="libraries/p5.sound.js"></script>
@@ -14,8 +14,8 @@
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="jQueryRotate.js"></script>
-    <script type="text/javascript" src="mfs_expt4.js"></script>
-    <script type="text/javascript" src="mfs4_animations.js"></script>
+    <script type="text/javascript" src="mfs_expt2.js"></script>
+    <script type="text/javascript" src="mfs2_animations.js"></script>
 </head>
 <center>
 <body style="width: 1080px; height: 720px; margin: 0 auto; "onload="initial_function()"> 
@@ -45,48 +45,33 @@
                     <div class="modal-body" style="text-align: left">
                         <ol>   
                             
-                            <li>Collect curcumin (a natural orange-yellow dye present in turmeric) and spectroscopy grade solvents: chloroform, dimethyl sulfoxide, acetone, and methanol. Quartz cuvette with 1 cm path length can be used for measuring absorption and emission spectra. Optical absorption measurements in different solvents are carried out with a spectrophotometer. Emission spectra of curcumin are recorded using a spectrofluorimeter. One has to be sure that the solvent blank does not fluoresce in the wavelength range of interest.</li>
-    <li>Prepare four 1 x 10-6 M curcumin solutions in four solvents, namely chloroform, DMSO (dimethyl sulfoxide), acetone, and methanol. Such dilute solutions can be prepared via multiple dilution steps from 1 x 10-3 M stock solutions in respective solvents. Here solutions in different solvents are shown on a solvent selection bar.</li>
-    <li>The Absorption and Emission measurements with all the solutions are carried out one after another as follows.</li>
-    <li>To take a particular solution, click on the appropriate solvent on the solvent selection bar and then click on the volumetric flask containing the solution.</li>
-    <li>Click on the quartz cuvette (path length, 1 cm x1 cm) to take it to the instrument table. Quartz cuvettes for spectrophotometric measurements are transparent only on two opposite sides, unlike the all-side transparent quartz cuvettes used for fluorescence measurements.</li>
-    <li>Click on the 5 mL capacity pipette to collect 3 mL of the experimental solution which will be transferred into the quartz cuvette. In real operation, one has to set the volume to 3 mL in the pipette and an appropriate tip should be attached prior to dipping it in the solution.</li>
-    <li>Click on the pipette to draw the solution into it.</li>
-    <li>Click on the pipette to take it out of the volumetric flask.</li>
-    <li>Click on the pipette again to transfer the solution into the cuvette.</li>
-    <li>To start the absorption spectral scan, click on the pop-up "Start Absorption Measurement".</li>
-    <li>Turn on the spectrophotometer clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.</li>
-    <li>Open the lid of the sample chamber of the spectrophotometer by clicking on the lid for placing the sample in the cell-holder.</li>
-    <li>Click on the cuvette to place it in the sample holder. One has to use pure solvent as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown.</li>
-    <li>Close the lid of the sample chamber by clicking on it.</li>
-    <li>Open the measurement set-up screen by clicking on the absorption measurement icon on the computer monitor.</li>
-    <li>On the screen, enter the wavelength range. Start: 550 nm End: 300 nm. In real operation, the wavelength range of incident light for the sample is chosen and the wavelength scan is run via the accompanied computer software. One can run the scan in absorbance (A) or transmittance (%T) mode.</li>
-    <li>Click on the green Start button on the measurement set-up screen to run the wavelength scan. Observe the wavelength scan.</li>
-    <li>Click on Close button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data.</li>
-    <li>To take the cuvette out of the sample chamber, first click on the sample chamber lid to open it and then on the cuvette.</li>
-    <li>Click on the lid of the sample chamber to close it.</li>
-    <li>Click on the pop-up: "Start Fluorescence Measurement".</li>
-    <li>Turn on the spectrofluorimeter by clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.</li>
-    <li>Click on the spectrophotometric quartz cuvette to transfer its content into an all-side-transparent quartz cuvette of path length 1 cm x1 cm for the fluorescence measurement.</li>
-    <li>Run the Emission Spectral Scan of the sample on a spectrofluorimeter as follows.</li>
-    <li>Open the lid of the sample chamber of the spectrofluorimeter by clicking on the lid for placing the sample.</li>
-    <li>Click on the cuvette to place it in the sample holder.</li>
-    <li>Close the lid of the sample chamber by clicking on the lid.</li>
-    <li>Open the instrument set-up screen by clicking on the fluorescence measurement icon on the computer monitor.
-    <li>Select the Emission Scan Mode on the screen.</li>
-    <li>On the screen, enter the Excitation wavelength: 420 nm, Emission Start Wavelength: 430 nm and Emission End wavelength: 650 nm. One chooses the Excitation Slit(nm) and Emision Slit(nm) values (here 10 nm/10 nm) and the scan speed value (here "medium") also.</li>
-    <li>To run the wavelength scan for emission spectrum, click on OK button on the set-up screen. One has to be sure that the solvent blank does not fluoresce in the wavelength range of interest.</li>
-    <li>Click on Close button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data.</li>
-    <li>To take the cuvette out of the sample chamber, first click on the sample chamber lid to open it and then on the cuvette.</li>
-    <li>Close the chamber lid by clicking on it.</li>
-    <li>Click on Reset button to start over the measurements.</li>
-    <li>Repeat the Absorption and Emission measurements with all the solvents by clicking on the solvent selection bar first and then on the volumetric flask containing the solution.</li>
-    <li>Collect all data by clicking on the Data tab.</li>
-    <li>Find out the maximum absorption and emission wavelengths for all the solvents and tabulate them along with the solvent dielectric constants and refractive indices values. Determine the absorption and fluorescence maxima in wave-number/cm-1 unit for all the solvents.</li>
-    <li>Calculate the solvent polarity function (Δf) from solvent dielectric constants and refractive indices values.</li>
-    <li>Plot Stokes shifts (in wave-number unit, cm-1) as a function of the solvent polarity function (Δf).</li>
-    <li>Discuss the characteristics of the plot.</li>
-    <li>Calculate the excited state dipole moment of curcumin</li> 
+                            <li>Prepare a 4.1 × 10-6 M fluorescein solution in spectroscopy grade ethanol from a 8.2 × 10-4 M fluorescein stock solution.</li>
+                            <li>Click on the volumetric flask containing the fluorescein solution to take it onto the instrument table.</li>
+                            <li>Take an all-side-transparent quartz cuvette (path length, 1 cm ×1 cm) by clicking on it.</li>
+                            <li>Click on the 5 mL‑capacity pipette to collect 3 mL of the experimental solution which will be transferred into the quartz cuvette. In real operation, one has to set the volume to 3 mL in the pipette and an appropriate tip should be attached prior to dipping it in the solution.</li>
+                            <li>Click on the pipette to draw the solution into it.</li>
+                            <li>Click on the pipette to take it out of the volumetric flask.</li>
+                            <li>Click on the pipette again to transfer the solution into the cuvette.</li>
+                            <li>Click on the pop-up “Start Fluorescence Measurement” to run the Excitation and Emission Spectral Scans of the sample on the spectrofluorimeter.</li>
+                            <li>Turn on the spectrofluorimeter by clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.</li>
+                            <li>Click on the lid of sample chamber of the spectrofluorimeter to open it for placing the sample in the instrument.</li>
+                            <li>Click on the cuvette to place it in the sample holder of the chamber.</li>
+                            <li>Close the lid of the sample chamber by clicking on the lid.</li>
+                            <li>To run the Excitation Spectral Scan, open the measurement set-up screen by clicking on the fluorescence measurement icon on the computer monitor.</li>
+                            <li>Select the Excitation Scan Mode on the screen.</li>
+                            <li>On the screen, enter the Emission wavelength: 515 nm, Excitation Start Wavelength: 300 nm and Excitation End wavelength: 600 nm. One chooses the Excitation Slit(nm) and Emission Slit(nm) values (here 2.5 nm/2.5 nm) and the scan speed value (here “medium” ) also.</li>
+                            <li>Click on the 'OK' button on the set-up screen to start the wavelength scan for excitation spectrum.</li>
+                            <li>Click on 'Close' button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data.</li>
+                            <li>To run the Emission Spectral Scan of the sample, open the instrument set-up screen by clicking on the fluorescence measurement icon on the computer monitor.</li>
+                            <li>Select the Emission Scan Mode on the screen.</li>
+                            <li>On the screen, enter the Excitation wavelength: 425 nm, Emission Start Wavelength: 435 nm and Emission End wavelength: 700 nm. Emission Start Wavelength value should be larger than the excitation wavelength. Often the the maximum absorbance wavelength is chosen as the excitation wavelength. The Emission End Wavelength value depends on the sample, instrument, etc. One chooses the Excitation Slit(nm) and Emission Slit(nm) values (here 2.5 nm/2.5 nm) and the scan speed value (here “medium” ) also.</li>
+                            <li>Click on the 'OK' button on the set-up screen to run the wavelength scan for emission spectrum. One has to be sure that the solvent blank does not fluoresce in the wavelength range of interest.</li>
+                            <li>Click on 'Close' button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data.</li>
+                            <li>To take the cuvette out of the sample chamber, first click on the sample chamber lid to open it and then on the cuvette.</li>
+                            <li>Close the lid of the sample chamber by clicking on the lid.</li>
+                            <li>Click on Reset button to start over the measurements.</li>
+                            <li>Collect all data by clicking on the Data tab.
+                            <li>Find out the maximum excitation and emission wavelengths and intensities.</li> 
 	                   </ol>
                     </div>
                 </div>
